@@ -1,7 +1,7 @@
 name: build_docfx_actions
 run-name: building pages
 on: 
-  [push]:
+  push:
     branches: [ docfx ]
 jobs:
   add_docfx:
