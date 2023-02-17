@@ -1,8 +1,10 @@
-name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
-on: [push]
+name: build_docfx_actions
+run-name: building pages
+on: 
+  [push]:
+    branches: [ docfx ]
 jobs:
-  check-bats-version:
+  add_docfx:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
